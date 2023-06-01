@@ -15,7 +15,7 @@
 	--icon-size: var(--gap-66);
 
 	content: "";
-	background-image: url(./images/icon-list.svg);
+	background-image: url(/images/icon-list.svg);
 	background-size: contain;
 	width: var(--icon-size);
 	aspect-ratio: 1;
