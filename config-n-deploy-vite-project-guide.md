@@ -1,4 +1,4 @@
-How to **Config Vite project & deploy it to GitHub Pages**
+# How to Config Vite project & deploy it to GitHub Pages
 
 When I decided to use Vite for my study projects, this quick beginner's guide would come in very handy.
 
@@ -61,7 +61,7 @@ export default defineConfig({ base: "/enter-your-repo-name-here/" });
 npm run deploy
 ```
 
-# Related links:
+## Related links:
 
 - [Vite](https://vitejs.dev/guide/) - next generation frontend tooling
 - [JustValidate](https://just-validate.dev/) - modern form validation library
