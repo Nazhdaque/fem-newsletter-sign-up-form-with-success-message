@@ -107,3 +107,8 @@ class FormEventsHandler {
 
 const handler = new FormEventsHandler(elements, cssClasses);
 handler.init();
+
+console.log(
+	"%cCoded by ✨Nazhdaque✨\nhttps://www.frontendmentor.io/profile/Nazhdaque",
+	"background: #222; color: chartreuse; font-size: 1.25rem"
+);
