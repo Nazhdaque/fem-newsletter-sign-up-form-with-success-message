@@ -1,0 +1,23 @@
+.sign-up-section {
+	--base-gap: var(--gap-100);
+
+	max-width: var(--max-content-width);
+	display: grid;
+	place-items: center;
+	grid-template-columns: repeat(2, 1fr);
+	gap: var(--base-gap);
+	padding: var(--base-gap);
+	background-color: var(--clr-neutral-100-solid);
+	border-radius: var(--component-border-radius);
+}
+
+.sign-up__info {
+	padding: var(--base-gap);
+	display: grid;
+	gap: var(--gap-175);
+}
+
+.sign-up__txt {
+	display: grid;
+	gap: var(--gap-100);
+}

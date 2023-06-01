@@ -1,0 +1,63 @@
+:root {
+	--max-content-width: 65rem;
+
+	--clr-primary-500-solid: hsl(155, 55%, 63%);
+	--clr-primary-600-solid: hsl(339, 100%, 62%); /* hsl(346, 100%, 66%)*/
+	--clr-primary-700-solid: hsl(4, 100%, 67%);
+	--clr-primary-800-solid: hsl(15, 100%, 61%);
+
+	--clr-primary-700-alpha: 4, 100%, 67%;
+	--clr-primary-800-alpha: 15, 100%, 61%;
+
+	--clr-neutral-800-solid: hsl(234, 29%, 20%);
+	--clr-neutral-700-solid: hsl(235, 18%, 26%);
+	--clr-neutral-400-solid: hsl(231, 7%, 60%);
+	--clr-neutral-100-solid: hsl(0, 0%, 100%);
+
+	--img-border-radius: calc(var(--fs-400) * 1.15);
+	--component-padding: calc(var(--fs-400) * 2);
+	--component-border-radius: calc(
+		var(--img-border-radius) + var(--component-padding)
+	);
+
+	--gap-200: calc(var(--gap-100) * 2);
+	--gap-175: calc(var(--gap-100) * 1.75);
+	--gap-150: calc(var(--gap-100) * 1.5);
+	--gap-125: calc(var(--gap-100) * 1.25);
+	--gap-100: var(--component-padding);
+	--gap-75: calc(var(--gap-100) * 0.75);
+	--gap-66: calc(var(--gap-100) * 0.66);
+	--gap-50: calc(var(--gap-100) * 0.5);
+	--gap-33: calc(var(--gap-100) * 0.33);
+	--gap-25: calc(var(--gap-100) * 0.25);
+}
+
+/* general styles */
+*,
+*:where(::before, ::after) {
+	box-sizing: border-box !important;
+	margin: 0;
+	padding: 0;
+}
+
+:where(img, picture, svg) {
+	width: 100%;
+	display: block;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+	font-size: var(--fs-400);
+	color: var(--clr-neutral-800-solid);
+	line-height: var(--lh-reg);
+	background-color: var(--clr-neutral-700-solid);
+	display: grid;
+	place-items: center;
+	padding-inline: var(--gap-100);
+}

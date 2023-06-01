@@ -1,0 +1,37 @@
+@media (width <= 992px) {
+	:root {
+		--fs-form: var(--fs-300);
+	}
+
+	body {
+		padding-inline: 0;
+	}
+
+	.sign-up-section {
+		grid-template-columns: initial;
+		grid-template-rows: min-content 1fr;
+		align-items: start;
+		padding: initial;
+		border-radius: initial;
+		min-height: 100vh;
+		min-height: 100dvh;
+		gap: 0;
+	}
+
+	.sign-up__info {
+		order: 1;
+		padding: var(--gap-75);
+	}
+}
+
+@media (width <= 576px) {
+	.title-lg {
+		--fs-700: var(--fs-500);
+	}
+	.modal__content {
+		border-radius: initial;
+		height: 100%;
+		padding-inline: var(--gap-75);
+		padding-block: var(--gap-150);
+	}
+}

@@ -1,0 +1,88 @@
+.btn {
+	--bg-position: right center;
+	--easing: ease-in;
+	--time: 0.25s;
+
+	--gradient: linear-gradient(
+		to right,
+		var(--clr-neutral-800-solid) 0%,
+		var(--clr-neutral-800-solid) 51%,
+		var(--clr-primary-600-solid) 76%,
+		var(--clr-primary-800-solid) 100%
+	);
+
+	color: var(--clr-neutral-100-solid);
+	font-weight: var(--fw-bold);
+	text-align: center;
+	border: none;
+	line-height: 1.45;
+	transition: background-position var(--time) var(--easing);
+	background-size: 400% auto;
+	background-image: var(--gradient);
+	position: relative;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	outline: none;
+	display: grid;
+	grid-template-columns: var(--fs-form) 1fr var(--fs-form);
+	place-items: center;
+	column-gap: var(--gap-25);
+}
+
+.btn.unlocked:not(.modal-btn) {
+	background-position: var(--bg-position);
+}
+.btn .text-ellipsis {
+	grid-column: 2;
+}
+
+.btn::after {
+	background-image: url(/images/lock.svg);
+	content: "";
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1;
+	width: 100%;
+	aspect-ratio: 1;
+	grid-column: 3;
+	opacity: 0;
+	transition: opacity var(--time), transform var(--time);
+	transform: scale(2);
+}
+.btn.locked:where(:hover, :focus-visible)::after {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.btn::before {
+	--offset-y: 0;
+	--spread: 0;
+	--blur: 0;
+
+	content: "";
+	position: absolute;
+	inset: var(--spread);
+	background-size: 400% auto;
+	background-image: var(--gradient);
+	filter: blur(var(--blur));
+	transform: translate3d(0px, var(--offset-y), -1px);
+	border-radius: inherit;
+	pointer-events: none;
+	transition: background-position var(--time) var(--easing),
+		filter var(--time) var(--easing), transform var(--time) var(--easing),
+		inset var(--time) var(--easing);
+}
+.btn.unlocked:where(:hover, :focus-visible)::before {
+	--offset-y: calc(var(--fs-form) * 0.75);
+	--spread: calc(var(--fs-form) * 0.5);
+	--blur: calc(var(--fs-form) * 1.5);
+
+	background-position: var(--bg-position);
+}
+
+.modal-btn {
+	display: inline-block;
+}
+.modal-btn:where(:hover, :focus-visible) {
+	background-position: var(--bg-position);
+}

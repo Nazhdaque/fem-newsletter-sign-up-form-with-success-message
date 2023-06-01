@@ -1,0 +1,22 @@
+.list {
+	list-style: none;
+	display: grid;
+	gap: var(--gap-33);
+}
+
+.list > * {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	align-items: start;
+	gap: var(--gap-50);
+}
+
+.list > *::before {
+	--icon-size: var(--gap-66);
+
+	content: "";
+	background-image: url(./images/icon-list.svg);
+	background-size: contain;
+	width: var(--icon-size);
+	aspect-ratio: 1;
+}

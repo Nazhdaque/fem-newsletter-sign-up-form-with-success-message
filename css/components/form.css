@@ -1,0 +1,80 @@
+.sign-up__form {
+	--sucess-color-solid: var(--clr-primary-500-solid);
+	--error-color-solid: var(--clr-primary-700-solid);
+	--error-color-alpha: var(--clr-primary-700-alpha);
+
+	display: grid;
+	gap: var(--gap-75);
+}
+
+.sign-up__form-item {
+	position: relative;
+}
+.sign-up__form-item:first-child {
+	display: grid;
+	gap: var(--gap-33);
+}
+
+label[for="email"] {
+	font-size: var(--fs-200);
+	font-weight: var(--fw-bold);
+}
+
+.input-field,
+.btn {
+	--input-btn-padding: var(--gap-66);
+	--border-thikness: calc(var(--fs-400) * 0.1);
+
+	font-size: var(--fs-form);
+	padding: var(--input-btn-padding);
+	border-radius: calc(var(--img-border-radius) * 0.5);
+	width: 100%;
+}
+
+.input-field {
+	--outline-color: hsl(var(--clr-primary-800-alpha), 0.5);
+	--outline-thikness: calc(var(--border-thikness) * 2);
+	--outline-offset: calc(
+		(var(--outline-thikness) + var(--border-thikness)) * -1
+	);
+
+	border: var(--border-thikness) solid var(--clr-neutral-400-solid);
+}
+.input-field::placeholder {
+	color: var(--clr-neutral-400-solid);
+	opacity: 1;
+}
+.input-field:where(:hover, :focus-visible) {
+	border-color: var(--clr-neutral-800-solid);
+}
+.input-field:focus-visible {
+	outline: var(--outline-thikness) solid var(--outline-color);
+	outline-offset: var(--outline-offset);
+}
+
+/* form validation styles */
+.labels {
+	font-size: var(--fs-200);
+	font-weight: var(--fw-bold);
+	position: absolute;
+	right: 0;
+}
+.error-label {
+	color: var(--error-color-solid) !important;
+}
+.success-label {
+	color: var(--sucess-color-solid) !important;
+}
+
+.input-field.error-field {
+	color: var(--error-color-solid);
+	border-color: var(--error-color-solid);
+	background-color: hsl(var(--error-color-alpha), 0.15);
+}
+.input-field.error-field::placeholder {
+	opacity: 0;
+}
+.input-field.error-field:focus-visible,
+.input-field.success-field:focus-visible {
+	outline: none;
+}

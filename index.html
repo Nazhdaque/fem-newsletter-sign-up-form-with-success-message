@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+				content="IE=edge">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<title>FEM | Newsletter sign-up form with success message</title>
+	<meta name="description"
+				content="XXX-XXX-XXX">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:title"
+				content="FEM | Newsletter sign-up form with success message">
+	<meta property="og:description"
+				content="XXX-XXX-XXX">
+	<meta property="og:type"
+				content="website">
+	<meta property="og:url"
+				content="https://nazhdaque.github.io/fem-newsletter-sign-up-form-with-success-message/">
+	<meta property="og:image"
+				content="./images/preview.jpg">
+	<meta property="og:image:width"
+				content="1200">
+	<meta property="og:image:height"
+				content="630">
+	<!-- Twitter -->
+	<meta name="twitter:card"
+				content="summary_large_image">
+	<meta name="twitter:title"
+				content="FEM | Newsletter sign-up form with success message">
+	<meta name="twitter:description"
+				content="XXX-XXX-XXX">
+	<meta name="twitter:url"
+				content="https://nazhdaque.github.io/fem-newsletter-sign-up-form-with-success-message/">
+	<meta name="twitter:image"
+				content="./images/preview.jpg">
+
+	<link rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/images/favicon-32x32.png">
+</head>
+
+<body>
+	<main>
+		<section class="sign-up-section">
+			<div class="sign-up__info">
+				<div class="sign-up__txt">
+					<h1 class="title-lg">Stay updated!</h1>
+
+					<p>Join 60,000+ product managers receiving monthly updates on:</p>
+
+					<ul class="list">
+						<li>
+							<p>Product discovery and building what matters</p>
+						</li>
+						<li>
+							<p>Measuring to ensure updates are a success</p>
+						</li>
+						<li>
+							<p>And much more!</p>
+						</li>
+					</ul>
+				</div>
+
+				<form class="sign-up__form"
+							id="sign-up-form">
+
+					<div class="sign-up__form-item">
+						<label for="email">Email Address</label>
+						<input type="email"
+									 name="email"
+									 id="email"
+									 inputmode="email"
+									 placeholder="email@company.com"
+									 class="input-field text-ellipsis"
+									 autocomplete="on">
+					</div>
+
+					<div class="sign-up__form-item">
+						<button class="btn locked"
+										id="submit-form"
+										type="submit"><span class="text-ellipsis">Subscribe to monthly newsletter</span></button>
+					</div>
+				</form>
+			</div>
+
+			<picture>
+				<source srcset="/images/illustration-sign-up-mobile.svg"
+								media="(max-width: 992px)">
+				<img class="sign-up__img"
+						 src="/images/illustration-sign-up-desktop.svg"
+						 alt="sign-up illustration vector svg">
+			</picture>
+		</section>
+	</main>
+
+	<dialog class="modal-success">
+		<div class="modal__content">
+			<img class="modal__icon"
+					 src="/images/icon-success.svg"
+					 alt="round orange-pink gradient check mark icon svg">
+
+			<div class="modal__txt">
+				<h2 class="title-lg">Thanks for subscribing!</h2>
+				<p>A confirmation email has been sent to <span class="user-email"></span>.
+					Please open it and click the button inside to confirm your subscription.</p>
+			</div>
+
+			<form method="dialog">
+				<div class="sign-up__form-item">
+					<button class="btn unlocked modal-btn"
+									type="submit">Dismiss message</button>
+				</div>
+			</form>
+		</div>
+	</dialog>
+
+	<script type="module"
+					src="/main.js"></script>
+</body>
+
+</html>
