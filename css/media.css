@@ -33,5 +33,6 @@
 		height: 100%;
 		padding-inline: var(--gap-75);
 		padding-block: var(--gap-150);
+		grid-template-rows: 1fr 2.5fr min-content;
 	}
 }

@@ -16,7 +16,7 @@
 	background-color: var(--clr-neutral-100-solid);
 	border-radius: calc(var(--component-border-radius) * 0.75);
 	display: grid;
-	grid-template-rows: 1fr 2.5fr min-content;
+	grid-template-rows: min-content 2.5fr min-content;
 	padding-inline: var(--gap-200);
 	padding-block: var(--gap-150) var(--gap-200);
 	gap: var(--gap-125);
