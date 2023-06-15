@@ -1,9 +1,7 @@
-# How to Config Vite project & deploy it to GitHub Pages
-
-When I decided to use Vite for my study projects, this quick beginner's guide would come in very handy.
+# Config Vite project & deploy it to GitHub Pages
 
 1. Download and install [Node.js](https://nodejs.org/en)
-2. Install the dependencies, devDependencies, create `vite.config.js` and start the server. To open terminal press `CMD+J`(MacOS) or `CTRL+J` and enter:
+2. Install the dependencies, devDependencies, create `vite.config.js` and start the server:
 
 ```sh
 npm create vite@latest
@@ -60,14 +58,3 @@ export default defineConfig({ base: "/enter-your-repo-name-here/" });
 ```sh
 npm run deploy
 ```
-
-## Related links:
-
-- [Vite](https://vitejs.dev/guide/) - next generation frontend tooling
-- [JustValidate](https://just-validate.dev/) - modern form validation library
-- [Deploying Vite App to GitHub Pages](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane) - additional info
-- [The Math Behind Nesting Rounded Corners](https://cloudfour.com/thinks/the-math-behind-nesting-rounded-corners/) - nice nested rounded borders
-- [CSS gradient buttons](https://cssgradient.io/gradient-backgrounds/)
-- [CSS gradient shadows generator](https://css-generators.com/gradient-shadows/)
-- [Google webfonts helper](https://gwfh.mranftl.com/fonts/roboto?subsets=latin) - Roboto font
-- [Dillinger](https://dillinger.io/) - оnline markdown editor to easily write documents like this.

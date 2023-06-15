@@ -1,11 +1,16 @@
-@layer base, components, parts, media, utilities;
+@layer common, components, parts, utilities, media;
 
-@import url(./base.css) layer(base);
-@import url(./components/typography.css) layer(base);
+@import url(./common/fonts.css) layer(common);
+@import url(./common/root.css) layer(common);
+@import url(./common/typography.css) layer(common);
+@import url(./common/base.css) layer(common);
+
 @import url(./components/list.css) layer(components);
 @import url(./components/button.css) layer(components);
 @import url(./components/form.css) layer(components);
 @import url(./components/modal.css) layer(components);
+
 @import url(./parts/sign-up-section.css) layer(parts);
-@import url(./media.css) layer(media);
-@import url(./utilities.css) layer(utilities);
+
+@import url(./common/utilities.css) layer(utilities);
+@import url(./common/media.css) layer(media);

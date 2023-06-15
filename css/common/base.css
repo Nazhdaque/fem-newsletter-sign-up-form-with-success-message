@@ -1,0 +1,28 @@
+*,
+*:where(::before, ::after) {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box !important;
+}
+
+:where(img, picture, svg) {
+	width: 100%;
+	display: block;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+	font-size: var(--fs-400);
+	color: var(--clr-neutral-800-solid);
+	line-height: var(--lh-reg);
+	background-color: var(--clr-neutral-700-solid);
+	display: grid;
+	place-items: center;
+	padding-inline: var(--gap-100);
+}

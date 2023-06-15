@@ -1,8 +1,9 @@
-:root {
+:root,
+::backdrop {
 	--max-content-width: 65rem;
 
 	--clr-primary-500-solid: hsl(155, 55%, 63%);
-	--clr-primary-600-solid: hsl(339, 100%, 62%); /* hsl(346, 100%, 66%)*/
+	--clr-primary-600-solid: hsl(339, 100%, 62%);
 	--clr-primary-700-solid: hsl(4, 100%, 67%);
 	--clr-primary-800-solid: hsl(15, 100%, 61%);
 
@@ -30,34 +31,4 @@
 	--gap-50: calc(var(--gap-100) * 0.5);
 	--gap-33: calc(var(--gap-100) * 0.33);
 	--gap-25: calc(var(--gap-100) * 0.25);
-}
-
-/* general styles */
-*,
-*:where(::before, ::after) {
-	box-sizing: border-box !important;
-	margin: 0;
-	padding: 0;
-}
-
-:where(img, picture, svg) {
-	width: 100%;
-	display: block;
-}
-
-html,
-body {
-	min-height: 100vh;
-}
-
-body {
-	font-family: var(--ff-primary);
-	font-weight: var(--fw-regular);
-	font-size: var(--fs-400);
-	color: var(--clr-neutral-800-solid);
-	line-height: var(--lh-reg);
-	background-color: var(--clr-neutral-700-solid);
-	display: grid;
-	place-items: center;
-	padding-inline: var(--gap-100);
 }
