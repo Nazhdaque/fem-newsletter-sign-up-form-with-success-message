@@ -1,5 +1,4 @@
-:root,
-::backdrop {
+:root {
 	--max-content-width: 65rem;
 
 	--clr-primary-500-solid: hsl(155, 55%, 63%);
